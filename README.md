@@ -64,28 +64,6 @@ Middleware	CORS	Cross-origin requests
 
 (as in Table 1.1, page 25 MINIPROJECT_REPORT)
 
-🛠️ Installation
-1️⃣ Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
-cd your-repo
-
-2️⃣ Install dependencies
-pip install -r requirements.txt
-
-3️⃣ Add your API keys (Apify, Gemini)
-
-Create a .env file:
-
-APIFY_TOKEN=your_token
-GEMINI_API_KEY=your_key
-
-4️⃣ Start FastAPI backend
-uvicorn main:app --reload
-
-5️⃣ Open frontend
-
-Open index.html in your browser.
-
 📡 API Endpoint
 POST /generate_blog
 
@@ -158,5 +136,7 @@ It removes the manual effort of scraping, analyzing, and writing — creating a 
 👩‍💻 Author
 
 K. Sunandita
+
 B.Tech CSE
+
 The Apollo University, Chittoor
