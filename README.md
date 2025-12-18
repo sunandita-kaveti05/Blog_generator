@@ -18,22 +18,14 @@ HTML, CSS, JavaScript frontend for UI
 The system generates a complete blog containing:
 
 SEO title
-
 Meta description
-
 600+ word article
-
 Review-based hashtags
-
 Sentiment breakdown
 
-(As described in the Abstract and Implementation sections of the report 
+(As described in the Abstract and Implementation sections of the report MINIPROJECT_REPORT)
 
-MINIPROJECT_REPORT
-
-)
-
-✨ Features
+✨ Features :
 
 🔍 Scrapes real customer reviews using the Apify API
 
@@ -49,28 +41,16 @@ MINIPROJECT_REPORT
 
 ⚠️ Handles invalid URLs, no reviews, API failures gracefully (Testing section 
 
-MINIPROJECT_REPORT
-
-)
 
 🏗️ System Architecture
 
-The workflow includes (as shown in the Architecture diagram page 13 
-
-MINIPROJECT_REPORT
-
-):
+The workflow includes (as shown in the Architecture diagram page 13 MINIPROJECT_REPORT):
 
 User Input (Google Maps URL + keyword)
-
 Frontend → FastAPI request
-
 Apify Scraper → Extract reviews
-
 Sentiment Analysis using VADER
-
 Gemini 2.0 Flash → Generate blog
-
 Frontend displays results
 
 🧩 Tech Stack
@@ -82,11 +62,7 @@ Sentiment Analysis	NLTK VADER	Review polarity analysis
 Text Generation	Google Gemini 2.0 Flash	Blog writing
 Middleware	CORS	Cross-origin requests
 
-(as in Table 1.1, page 25 
-
-MINIPROJECT_REPORT
-
-)
+(as in Table 1.1, page 25 MINIPROJECT_REPORT)
 
 🛠️ Installation
 1️⃣ Clone the repository
@@ -113,11 +89,7 @@ Open index.html in your browser.
 📡 API Endpoint
 POST /generate_blog
 
-Request format (from page 21-22 of report 
-
-MINIPROJECT_REPORT
-
-):
+Request format (from page 21-22 of report MINIPROJECT_REPORT):
 
 {
   "google_maps_url": "",
@@ -130,24 +102,15 @@ MINIPROJECT_REPORT
 Response includes:
 
 place_name
-
 insights (positive, neutral, negative, avg_compound)
-
 total_reviews
-
 sample_reviews
-
 blog
-
 hashtags
 
 🎯 Results
 
-According to the Testing & Results section (pages 25–28 
-
-MINIPROJECT_REPORT
-
-):
+According to the Testing & Results section (pages 25–28 MINIPROJECT_REPORT):
 
 Average response time: 8–12 seconds
 
@@ -161,11 +124,7 @@ Output screenshots (Swagger + UI) shown on pages 37–38.
 
 🚧 Limitations
 
-(from Table 1.5 on page 27 
-
-MINIPROJECT_REPORT
-
-)
+(from Table 1.5 on page 27 MINIPROJECT_REPORT)
 
 VADER works best only on English text
 
@@ -177,11 +136,7 @@ Repetitive phrasing if model runs in constrained mode
 
 🚀 Future Enhancements
 
-(as suggested on page 31 
-
-MINIPROJECT_REPORT
-
-)
+(as suggested on page 31 MINIPROJECT_REPORT)
 
 Multi-language support
 
